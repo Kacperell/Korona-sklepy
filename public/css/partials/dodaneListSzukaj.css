@@ -1,0 +1,54 @@
+.dodaneLokaleSzuakj {
+    display: flex;
+    flex-direction: column;
+}
+
+.dodaneListSearchDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+
+}
+
+.dodaneListSearchDiv input {
+    max-width: 70%;
+}
+
+.dodaneListSearchDiv input,
+.dodaneListSearchDiv button {
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 0;
+    border-bottom: solid 1px black;
+    border: solid 1px black;
+    border-right: 0;
+}
+
+.dodaneListSearchDiv button {
+    background-color: #eb2325;
+    color: white;
+    border: solid 1px black;
+    cursor: pointer;
+    max-width: 30%
+}
+
+.dodajLokalForm__inputDiv--Restauracja  {
+    padding: 8px;
+}
+
+.szuakjMiastoForm{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+
+
+
+/* .dodaneListSearchDiv button:hover {
+    text-decoration: underline;
+    text-decoration-color: #fff952;
+} */

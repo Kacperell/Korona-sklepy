@@ -1,0 +1,43 @@
+mixin wpisCard(lokal={})
+    arcile.wpis
+        .wpis__infoiphoto
+            .wpis__photo
+                if lokal.photo
+                    img(src=`https://storage.googleapis.com/koronasklepy/${lokal.photo}`, alt="", srcset="")
+                else 
+                    img(src=`/img/logo2.png`, alt="", srcset="") 
+            .wpis__info
+                span #{lokal.name}
+                span #{lokal.adres.split('(')[0]}
+        .wpis__info--godziny
+            .wpis__info--godziny--text
+                span Godziny:
+            - var day=new Date().getDay();
+            .wpis__info--godziny--godziny  
+                .wpis__info--godziny--godziny--half  
+                    span(class=(day=='1'?'boldDay':'')) Poniedziałek:  
+                    span(class=(day=='2'?'boldDay':'')) Wtorek: 
+                    span(class=(day=='3'?'boldDay':'')) Środa: 
+                    span(class=(day=='4'?'boldDay':'')) Czwartek:
+                    span(class=(day=='5'?'boldDay':'')) Piątek: 
+                    span(class=(day=='6'?'boldDay':'')) Sobota: 
+                    span(class=(day=='0'?'boldDay':'')) Niedziela: 
+                .wpis__info--godziny--godziny--half  
+                    span(class=(day=='1'?'boldDay':'')) #{lokal.godziny[0].pon[0].od} - #{lokal.godziny[0].pon[0].do}
+                    span(class=(day=='2'?'boldDay':'')) #{lokal.godziny[0].wto[0].od} - #{lokal.godziny[0].wto[0].do}
+                    span(class=(day=='3'?'boldDay':'')) #{lokal.godziny[0].sro[0].od} - #{lokal.godziny[0].sro[0].do}
+                    span(class=(day=='4'?'boldDay':'')) #{lokal.godziny[0].czw[0].od} - #{lokal.godziny[0].czw[0].do}
+                    span(class=(day=='5'?'boldDay':'')) #{lokal.godziny[0].pia[0].od} - #{lokal.godziny[0].pia[0].do}
+                    span(class=(day=='6'?'boldDay':'')) #{lokal.godziny[0].sob[0].od} - #{lokal.godziny[0].sob[0].do}
+                    span(class=(day=='0'?'boldDay':'')) #{lokal.godziny[0].nie[0].od} - #{lokal.godziny[0].nie[0].do}
+
+
+            //- .wpis__info--godziny--godziny  
+            //-     span Poniedziałek:  #{lokal.godziny[0].pon[0].od} - #{lokal.godziny[0].pon[0].do}
+            //-     span Wtorek: #{lokal.godziny[0].wto[0].od} - #{lokal.godziny[0].wto[0].do}
+            //-     span Środa: #{lokal.godziny[0].sro[0].od} - #{lokal.godziny[0].sro[0].do}
+            //-     span Czwartek: #{lokal.godziny[0].czw[0].od} - #{lokal.godziny[0].czw[0].do}
+            //-     span Piątek: #{lokal.godziny[0].pia[0].od} - #{lokal.godziny[0].pia[0].do}
+            //-     span Sobota: #{lokal.godziny[0].sob[0].od} - #{lokal.godziny[0].sob[0].do}
+            //-     span Niedziela: #{lokal.godziny[0].nie[0].od} - #{lokal.godziny[0].nie[0].do}
+

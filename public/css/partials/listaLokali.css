@@ -1,0 +1,127 @@
+.listaLokali{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.wpisy{
+    max-width: 100%;
+}
+
+.wpis{
+    display:flex;
+    padding: 10px;
+    width: 750px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #eb2325 ;
+}
+.wpis:last-of-type{
+   border:0;
+}
+.wpis__info{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul.KategorieLokali{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-top: 1.5px solid #eb2325;
+    border-bottom: 1.5px solid #eb2325;
+}
+ul.KategorieLokali li {
+   padding: 15px;
+   color :#eb2325;
+}
+ul.KategorieLokali a {
+   text-decoration-color: #fff952;;
+}
+.active{
+   text-decoration-color: #eb2325!important;
+   background-color: #fff952;
+   border-radius: 10px;
+}
+.wpis__infoiphoto{
+    display: flex;
+    width: 45%;
+}
+.wpis__photo{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+.wpis__info{
+    width: 60%;
+}
+.wpis__photo img{
+    height: 60px;
+}
+.wpis__info--godziny{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wpis__info--godziny--godziny{
+    margin-left: 15px;
+    display: flex;
+}
+.wpis__info--godziny--godziny--half{
+    display: flex;
+    flex-direction: column;
+}
+.wpis__info--godziny--godziny--half:first-of-type{
+    margin-right:13px;
+}
+
+.wpis__info--godziny--godziny span{
+   padding: 1px;
+}
+
+.boldDay{
+    font-weight: 800;
+}
+
+@media (max-width: 600px) {
+    .wpis{
+        flex-direction: column;
+    }
+    .wpis__infoiphoto{
+        width: 100%;
+    }
+    .wpis__info--godziny{
+        width: 100%;
+    }
+    }
+
+@media (max-width: 700px) {
+    ul.KategorieLokali li {
+        padding: 13px;
+     }
+    }
+@media (max-width: 400px) {
+    ul.KategorieLokali li {
+        padding: 8px;
+     }
+     .wpis{
+         padding: 3px;
+     }
+    }
+@media (max-width: 350px) {
+    ul.KategorieLokali li {
+        padding: 4px;
+        font-size: 14px;
+     }
+     .wpis{
+        padding: 1px;
+    }
+    }
+  

@@ -1,0 +1,17 @@
+.saveShoop__entry{
+    width: 680px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    font-size: 18px;
+}
+
+a.objawy--tel{
+    text-decoration: none;
+    color:#eb2325;
+}
+a.objawy--tel:hover{
+    text-decoration: underline;
+    text-decoration-color: #fff952;;
+}

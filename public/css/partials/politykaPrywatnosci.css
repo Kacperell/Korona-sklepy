@@ -1,0 +1,16 @@
+p.politykaPrywatnosci {
+    padding: 11px;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+a.polityka_prywatnosciLink {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+}
+
+a.polityka_prywatnosciLink:hover {
+    text-decoration-color: #eb2325;
+}

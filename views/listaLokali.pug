@@ -1,0 +1,29 @@
+extends layout
+include mixins/_dodaneSzukaj
+include mixins/_wpisCard
+block content
+    .container
+        .listaLokali 
+            +dodaneSzukaj()
+            span.Header #{miasto}
+            ul.KategorieLokali  
+                a(href=`/lokale_lista?miasto=${miasto}&kategoria=spożywcze`
+                class=(kategoria=='spożywcze'?'active':''))
+                    li Spożywcze
+                a(href=`lokale_lista?miasto=${miasto}&kategoria=specjaliści` 
+                    class=(kategoria=='specjaliści'?'active':'')
+                    )
+                    li Specjaliści
+                a(href=`/lokale_lista?miasto=${miasto}&kategoria=gastronomia`  class=(kategoria=='gastronomia'?'active':''))
+                    li Gastronomia
+                a(href=`/lokale_lista?miasto=${miasto}&kategoria=urzędy`  class=(kategoria=='urzędy'?'active':''))
+                    li Urzędy
+                a(href=`/lokale_lista?miasto=${miasto}&kategoria=apteki`  class=(kategoria=='apteki'?'active':''))
+                    li Apteki/drogerie
+            //- p #{wpisy}
+            .wpisy     
+                if wpisy.length!=0  
+                    each lokal in wpisy  
+                        +wpisCard(lokal)      
+                else
+                    p Niestety nie odnalezliśmy lokali z tej kategori w  tym mieście.         

@@ -1,0 +1,52 @@
+@import 'partials/nav.css';
+@import 'partials/home.css';
+@import 'partials/dodajLokal.css';
+@import 'partials/popular.css';
+@import 'partials/dodaneListSzukaj.css';
+@import 'partials/listaLokali.css';
+@import 'partials/mapa.css';
+@import 'partials/bezpiecznezakupy.css';
+@import 'partials/politykaPrywatnosci.css';
+
+* {
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: #fff952;
+}
+
+body {
+    margin: 0;
+    /* background-color: 	#eb2325 */
+    font-family: 'Sen', sans-serif;
+    height: 100%;
+
+}
+
+
+.container {
+    width: 1200px;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover,
+input[type=submit]:hover {
+    text-decoration: underline;
+    text-decoration-color: #fff952;
+}
+
+.off {
+    display: none;
+}
+
+.noshow {
+    opacity: 0;
+    height: 0;
+}
+
+.content {
+    min-height: 80vh;
+}

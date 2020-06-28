@@ -1,0 +1,21 @@
+#mapid { height: 400px;
+margin-bottom: 80px;
+border-radius: 10px;
+}
+.popupMap{
+    display: flex;
+    flex-direction: column;
+}
+
+.popUPgodziny{
+    display: flex;
+}
+
+.popUPgodziny--dni,.popUPgodziny--godziny{
+    display: flex;
+    /* width: 40%; */
+    flex-direction: column;
+}
+.popUPgodziny--godziny{
+    /* width: 60%; */
+}
