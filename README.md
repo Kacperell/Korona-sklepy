@@ -1,1 +1,1 @@
-https://koronasklepy.pl/
+https://koronasklepy.appspot.com/
